@@ -1,0 +1,12 @@
+---
+layout: default
+title: Homess
+---
+<h1>{{ "Hello Worlds!" | downcase }}</h1>
+<ul>
+  {% for event in site.events %}
+    <li>
+      {{ event.content }}
+    </li>
+  {% endfor %}
+</ul>
