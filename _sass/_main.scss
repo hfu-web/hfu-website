@@ -1,26 +1,45 @@
 body {
-  color: $black;
-  font-family: $base-font;
-  font-size: $font-size;
-  font-weight: 400;
-  line-height: $line-height;
+	color: $black;
+	font-family: $base-font;
+	font-size: $font-size;
+	font-weight: 400;
+	line-height: $line-height;
 }
 
 .container {
 	overflow: hidden;
-	padding: 0 $distance-1;
+	padding: 0 $horizontal-spacing;
+
+	@media screen and (min-width: $bp) {
+		max-width: 1000px;
+    	margin-left: auto;
+    	margin-right: auto;
+  	}
 }
 
 .video {
-	margin-top: $distance-5;
-	margin-bottom: $distance-6;
+	margin: 7rem -$horizontal-spacing 8rem;
+
+	@media screen and (min-width: $bp) {
+		max-width: 1000px;
+    	margin-left: auto;
+    	margin-right: auto;
+  	}
 }
 
-// .info {
-// 	border-bottom: 1px solid $black;
-// 	padding-bottom: $distance-1;
-// 	margin-bottom: $distance-3;
-// }
+.info {
+	margin-bottom: 2rem;
+}
+
+.events {
+	margin-bottom: 5rem;
+}
+
+.albums {
+	border-bottom: 1px solid $black;
+	padding-bottom: 4rem;
+	margin-bottom: 4rem;
+}
 
 .paragraph {
 	margin-bottom: $distance-2;
@@ -31,12 +50,6 @@ body {
 	margin-bottom: $distance-2;
 }
 
-.content-item {
-	border-bottom: 1px solid $black;
-	padding-bottom: $distance-1;
-	margin-bottom: $distance-3;
-}
-
 .about {
 	text-align: center;
 
@@ -45,11 +58,40 @@ body {
 	}
 
 	&__members {
-		margin-bottom: $distance-4;
+		margin-bottom: $distance-3;
 	}
 
 	&__contact {
+		font-weight: bold;
 		margin-bottom: $distance-4;
+	}
+}
+
+.social-media-icon {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	opacity: 0.4;
+	margin-right: 2rem;
+	margin-bottom: $distance-4;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&--youtube {
+		background-image: url("/assets/images/youtube.svg");
+	}
+
+	&--vimeo {
+		background-image: url("/assets/images/vimeo.svg");
+	}
+
+	&--facebook {
+		background-image: url("/assets/images/facebook.svg");
 	}
 }
 
