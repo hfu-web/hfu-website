@@ -1,0 +1,61 @@
+body {
+  color: $black;
+  font-family: $base-font;
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $line-height;
+}
+
+.container {
+	overflow: hidden;
+	padding: 0 $distance-1;
+}
+
+.video {
+	margin-top: $distance-5;
+	margin-bottom: $distance-6;
+}
+
+// .info {
+// 	border-bottom: 1px solid $black;
+// 	padding-bottom: $distance-1;
+// 	margin-bottom: $distance-3;
+// }
+
+.paragraph {
+	margin-bottom: $distance-2;
+}
+
+.album-cover {
+	width: 100%;
+	margin-bottom: $distance-2;
+}
+
+.content-item {
+	border-bottom: 1px solid $black;
+	padding-bottom: $distance-1;
+	margin-bottom: $distance-3;
+}
+
+.about {
+	text-align: center;
+
+	&__head {
+		margin-bottom: $distance-2;
+	}
+
+	&__members {
+		margin-bottom: $distance-4;
+	}
+
+	&__contact {
+		margin-bottom: $distance-4;
+	}
+}
+
+.impressum {
+	background-color: $black;
+	color: #fff;
+	text-align: center;
+	padding: $distance-1;
+}

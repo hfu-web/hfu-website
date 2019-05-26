@@ -2,52 +2,55 @@
 layout: default
 title: Harrison Ford Ultras
 ---
-{% include video.html %}
-
-<div class="info">
-	HARRISON FORD ULTRAS haben sich im Dezember
-	2016 in Köln formiert und der absoluten Improvisation
-	zugewandt. Der Verzicht auf abgesprochene Themen
-	wird durch Spontaneität und die Sensibilität für
-	Atmosphären ersetzt. Im Zusammenspiel ergeben sich
-	Möglichkeiten der Kontemplation bis hin zur
-	ekstatischen Befreiung. Loops, Effektsounds,
-	Mikrotöne und rohe Perkussion schichten sich mal zu
-	durchscheinenden, mal zu massiven Klangformationen.
-	Bei ihren Livekonzerten wird die Dynamik zwischen
-	hypnotischem Minimalismus und anarchischen
-	Grenzverschiebungen am deutlichsten. Die Distanz
-	zum Publikum durch eine Bühne wird meist vermieden.
-	Stattdessen bauen HFU ihr Set lieber inmitten ihrer
-	Zuhörer auf, teilweise auch in selbstgeschaffenen
-	Skulpturen und Kulissen.
+<div class="video">
+	{% include video-embed.html %}
 </div>
-<div class="events">
+<div class="info content-item">
+	<p class="paragraph"><b>HARRISON FORD ULTRAS</b> haben sich im Dezember
+		2016 in Köln formiert und der absoluten Improvisation
+		zugewandt. Der Verzicht auf abgesprochene Themen
+		wird durch Spontaneität und die Sensibilität für
+		Atmosphären ersetzt. Im Zusammenspiel ergeben sich
+		Möglichkeiten der Kontemplation bis hin zur
+		ekstatischen Befreiung. Loops, Effektsounds,
+		Mikrotöne und rohe Perkussion schichten sich mal zu
+	durchscheinenden, mal zu massiven Klangformationen.</p>
+	<p class="paragraph">Bei ihren Livekonzerten wird die Dynamik zwischen
+		hypnotischem Minimalismus und anarchischen
+		Grenzverschiebungen am deutlichsten. Die Distanz
+		zum Publikum durch eine Bühne wird meist vermieden.
+		Stattdessen bauen HFU ihr Set lieber inmitten ihrer
+		Zuhörer auf, teilweise auch in selbstgeschaffenen
+		Skulpturen und Kulissen.
+	</p>
+</div>
+<div class="events content-item">
 	<ul>
 		{% for event in site.events %}
-		<li>
+		<li class="paragraph">
 			{{ event.content }}
 		</li>
 		{% endfor %}
 	</ul>
 </div>
-<div class="albums">
-	<img src="/assets/images/harrison-ford-ultras-album-cover.jpg">
-	Das Debutablbum WE MADE AMERICA GREAT basiert auf vier Studioimprovisationen, die zu den ersten musikalischen Zusammenkünften der
-	Band gehören.
-	Ausschnitte daraus bilden zwei in sich geschlossene Stücke, die jeweils eine
-	Vinylseite füllen. Sie lassen sich als dynamische Erzählungen hören, in denen
-	„sich cineastische Monumentaltät und politische Agitation verbinden“ und
-	„Hollywoods Pathos und amerikanische Präsidenten gleichermaßen zerlegt
-	werden.“ (2017)
+<div class="albums content-item">
+	<img class="album-cover" src="assets/images/harrison-ford-ultras-album-cover.jpg">
+	<p class="paragraph">
+		Das Debutablbum <b>WE MADE AMERICA GREAT</b> basiert auf vier Studioimprovisationen, die zu den ersten musikalischen Zusammenkünften der
+		Band gehören.<br>
+		Ausschnitte daraus bilden zwei in sich geschlossene Stücke, die jeweils eine
+		Vinylseite füllen. Sie lassen sich als dynamische Erzählungen hören, in denen
+		„sich cineastische Monumentaltät und politische Agitation verbinden” und
+		„Hollywoods Pathos und amerikanische Präsidenten gleichermaßen zerlegt
+		werden.” (2017)
+	</p>
 </div>
 <div class="about">
-	HFU sind
-	g - Sebastian Bathe 
-	b - Nolle Woida
-	d - Christoph Görke
-	Kontakt & Booking harrison-ford-ultras@harrison-ford-ultras.com
-</div>
-<div class="Impressum">
-	Impressum
+	<div class="about__head">HFU sind</div>
+	<div class="about__members">
+		g - Sebastian Bathe<br>
+		b - Nolle Woida<br>
+		d - Christoph Görke<br>
+	</div>
+	<div class="about__contact">Kontakt & Booking<br> harrison-ford-ultras@harrison-ford-ultras.com</div>
 </div>
