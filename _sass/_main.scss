@@ -18,7 +18,9 @@ body {
 }
 
 .video {
-	margin: 7rem -$horizontal-spacing 8rem;
+	margin: 7rem 0 8rem;
+	margin-left: -$horizontal-spacing;
+	margin-right: -$horizontal-spacing;
 
 	@media screen and (min-width: $bp) {
 		max-width: 1000px;
@@ -83,15 +85,15 @@ body {
 	}
 
 	&--youtube {
-		background-image: url("/assets/images/youtube.svg");
+		background-image: url("https://hfu-web.github.io/hfu-website/assets/images/youtube.svg");
 	}
 
 	&--vimeo {
-		background-image: url("/assets/images/vimeo.svg");
+		background-image: url("https://hfu-web.github.io/hfu-website/assets/images/vimeo.svg");
 	}
 
 	&--facebook {
-		background-image: url("/assets/images/facebook.svg");
+		background-image: url("https://hfu-web.github.io/hfu-website/assets/images/facebook.svg");
 	}
 }
 
