@@ -8,13 +8,13 @@ title: Harrison Ford Ultras
 <div class="content-container">
 	<div class="events">
 		<ul>
-			{% assign sorted = site.events | sort: 'datum' %}
-			{% for event in sorted %}
-				{% unless event.published == 'false' %}
-					<li class="paragraph">
-					{{ event.text }}
-					</li>
-				{% endunless %}
+			{% assign events = site.events | sort: 'datum' %}
+			{% for event in events %}
+			{% unless event.published == 'false' %}
+			<li class="paragraph">
+				{{ event.text }}
+			</li>
+			{% endunless %}
 			{% endfor %}
 		</ul>
 	</div>
@@ -38,16 +38,15 @@ title: Harrison Ford Ultras
 		</p>
 	</div>
 	<div class="albums">
-		<img class="album-cover" src="assets/images/harrison-ford-ultras-album-cover.jpg">
-		<p class="paragraph">
-			Das Debutablbum <b>WE MADE AMERICA GREAT</b> basiert auf vier Studioimprovisationen, die zu den ersten musikalischen Zusammenkünften der
-			Band gehören.<br>
-			Ausschnitte daraus bilden zwei in sich geschlossene Stücke, die jeweils eine
-			Vinylseite füllen. Sie lassen sich als dynamische Erzählungen hören, in denen
-			„sich cineastische Monumentaltät und politische Agitation verbinden” und
-			„Hollywoods Pathos und amerikanische Präsidenten gleichermaßen zerlegt
-			werden.” (2017)
-		</p>
+		{% assign albums = site.albums | sort: 'uploaddatum' | reverse %}
+		{% for album in albums %}
+		{% unless album.published == 'false' %}
+		<div class="album">
+			<img class="album-cover" src="{{ album.albumcover }}">
+			<p class="paragraph">{{ album.beschreibungstext }}</p>
+		</div>
+		{% endunless %}
+		{% endfor %}
 	</div>
 </div>
 <div class="about">

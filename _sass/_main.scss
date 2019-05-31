@@ -95,6 +95,10 @@ body {
 	}
 }
 
+.album:not(:last-child) {
+	margin-bottom: $distance-4;
+}
+
 .paragraph {
 	margin-bottom: $distance-2;
 }
