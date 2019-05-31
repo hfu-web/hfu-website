@@ -5,10 +5,19 @@ fields:
 - name: datum
   type: datetime
   label: Datum
-  description: Wann findet das Konzert statt?
+  description: Wann findet das Event statt?
   config:
     required: true
-    date_format: DD/MM/YYYY
+    date_format: ''
     time_format: 
     display_utc: false
-  default: '2019-05-31 11:16:49 +0000'
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Text
+  description: Die Beschreibung des Events
