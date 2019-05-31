@@ -12,7 +12,7 @@ title: Harrison Ford Ultras
 			{% for event in events %}
 			{% unless event.published == 'false' %}
 			<li class="paragraph">
-				{{ event.text }}
+				{{ event.text | markdownify }}
 			</li>
 			{% endunless %}
 			{% endfor %}
@@ -43,7 +43,7 @@ title: Harrison Ford Ultras
 		{% unless album.published == 'false' %}
 		<div class="album">
 			<img class="album-cover" src="{{ album.albumcover }}">
-			<p class="paragraph">{{ album.beschreibungstext }}</p>
+			<p class="paragraph">{{ album.beschreibungstext | markdownify }}</p>
 		</div>
 		{% endunless %}
 		{% endfor %}
