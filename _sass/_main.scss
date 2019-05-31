@@ -1,9 +1,34 @@
+// Font
+$base-font: -apple-system, system-ui, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size: 1.3rem;
+$line-height: 1.5;
+
+
+// Colors
+$black: #252525;
+
+// Spacing
+$horizontal-spacing: 1.4rem;
+$distance-1: 1rem;
+$distance-2: 2rem;
+$distance-3: 3rem;
+$distance-4: 4rem;
+$distance-5: 5rem;
+$distance-6: 6rem;
+
+// Breakpoints
+$bp: 600px;
+
 body {
 	color: $black;
 	font-family: $base-font;
-	font-size: $font-size;
+	font-size: 1.4rem;
 	font-weight: 400;
 	line-height: $line-height;
+
+	@media screen and (min-width: $bp) {
+		font-size: 1.3rem;
+	}
 }
 
 .container {
@@ -12,9 +37,9 @@ body {
 
 	@media screen and (min-width: $bp) {
 		max-width: 1000px;
-    	margin-left: auto;
-    	margin-right: auto;
-  	}
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .video {
@@ -23,25 +48,51 @@ body {
 	margin-right: -$horizontal-spacing;
 
 	@media screen and (min-width: $bp) {
-		max-width: 1000px;
-    	margin-left: auto;
-    	margin-right: auto;
-  	}
+		border-bottom: 1px solid $black;
+		padding-bottom: 8rem;
+		margin-bottom: 5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.content-container {
+	border-bottom: 1px solid $black;
+	padding-bottom: 4rem;
+	margin-bottom: 6rem;
+
+	@media screen and (min-width: $bp) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .info {
 	margin-bottom: 4rem;
+
+	@media screen and (min-width: $bp) {
+		order: 1;
+		width: 25%;
+		margin-top:	2rem;
+	}
 }
 
 .events {
-	font-weight: bold;
 	margin-bottom: 4rem;
+
+	@media screen and (min-width: $bp) {
+		order: 3;
+		width: 25%;
+		margin-top:	2rem;
+	}
 }
 
 .albums {
-	border-bottom: 1px solid $black;
-	padding-bottom: 4rem;
-	margin-bottom: 6rem;
+	@media screen and (min-width: $bp) {
+		order: 2;
+		width: 37%;
+	}
 }
 
 .paragraph {
@@ -50,7 +101,11 @@ body {
 
 .album-cover {
 	width: 100%;
-	margin-bottom: $distance-1;
+	margin-bottom: $distance-2;
+
+	@media screen and (min-width: $bp) {
+		margin-bottom: $distance-3;
+	}
 }
 
 .about {
@@ -65,13 +120,24 @@ body {
 	}
 
 	&__contact {
+		display: inline-block;
 		font-weight: bold;
 		margin-bottom: $distance-4;
+	}
+
+	@media screen and (min-width: $bp) {
+		position: relative;
 	}
 }
 
 .social-media {
-	margin-bottom: 4rem;
+	margin-bottom: 3.7rem;
+
+	@media screen and (min-width: $bp) {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
 }
 
 .social-media-icon {
@@ -86,6 +152,15 @@ body {
 
 	&:last-child {
 		margin-right: 0;
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	@media screen and (min-width: $bp) {
+		width: 34px;
+		height: 34px;
 	}
 
 	&--youtube {
@@ -105,5 +180,5 @@ body {
 	background-color: $black;
 	color: #fff;
 	text-align: center;
-	padding: $distance-1;
+	padding: $distance-2;
 }
