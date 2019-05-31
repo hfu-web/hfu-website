@@ -7,5 +7,6 @@ beschreibungstext: "Das Debutablbum **WE MADE AMERICA GREAT** basiert auf vier S
   Sie lassen sich als dynamische Erzählungen hören, in denen „sich cineastische Monumentalität
   und politische Agitation verbinden” und „Hollywoods Pathos und amerikanische Präsidenten
   gleichermaßen zerlegt werden.” (2017)"
+name_des_albums: We Made America Great
 
 ---
