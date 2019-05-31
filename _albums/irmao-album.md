@@ -6,6 +6,7 @@ beschreibungstext: "Sehr schön melancholisches Album.  \n  \n**Li Europan lingu
   sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica,
   li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un
   nov lingua franca: On refusa."
+name_des_albums: Irmao
 published: false
 
 ---
