@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Seiten
-  create: all
 - type: directory
   path: _events
   label: Events
@@ -21,6 +18,9 @@ sections:
   match: "**/*"
   templates:
   - album
+- type: jekyll-pages
+  label: Seiten
+  create: all
 upload_dir: assets/images
 public_path: assets/images
 front_matter_path: ''
