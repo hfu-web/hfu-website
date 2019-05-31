@@ -16,5 +16,16 @@ fields:
     schema:
       format: markdown
   label: Beschreibungstext
+- name: uploaddatum
+  type: datetime
+  label: Uploaddatum
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
+  default: now
 pages:
 - _albums/irmao-album.md
