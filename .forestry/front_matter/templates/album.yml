@@ -1,0 +1,18 @@
+---
+label: Album
+hide_body: true
+fields:
+- name: albumcover
+  type: file
+  config:
+    maxSize: '10'
+  label: Albumcover
+- name: beschreibungstext
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Beschreibungstext

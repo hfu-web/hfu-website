@@ -4,16 +4,22 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Pages
-  create: all
+- type: directory
+  path: _albums
+  label: Albums
+  create: documents
+  match: "**/*"
+  templates:
+  - album
 - type: directory
   path: _events
   label: Events
-  create: all
+  create: documents
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+  templates:
+  - event
+upload_dir: assets/images
+public_path: assets/images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
