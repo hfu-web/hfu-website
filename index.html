@@ -8,10 +8,13 @@ title: Harrison Ford Ultras
 <div class="content-container">
 	<div class="events">
 		<ul>
-			{% for event in site.events %}
-			<li class="paragraph">
-				{{ event.content }}
-			</li>
+			{% assign sorted = site.events | sort: 'datum' %}
+			{% for event in sorted %}
+				{% unless event.published == 'false' %}
+					<li class="paragraph">
+					{{ event.text }}
+					</li>
+				{% endunless %}
 			{% endfor %}
 		</ul>
 	</div>
