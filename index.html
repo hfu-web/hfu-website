@@ -5,6 +5,15 @@ title: Harrison Ford Ultras
 <div class="video">
 	{% include video-embed.html %}
 </div>
+<div class="events">
+	<ul>
+		{% for event in site.events %}
+		<li class="paragraph">
+			{{ event.content }}
+		</li>
+		{% endfor %}
+	</ul>
+</div>
 <div class="info">
 	<p class="paragraph"><b>HARRISON FORD ULTRAS</b> haben sich im Dezember
 		2016 in Köln formiert und der absoluten Improvisation
@@ -23,15 +32,6 @@ title: Harrison Ford Ultras
 		Zuhörer auf, teilweise auch in selbstgeschaffenen
 		Skulpturen und Kulissen.
 	</p>
-</div>
-<div class="events">
-	<ul>
-		{% for event in site.events %}
-		<li class="paragraph">
-			{{ event.content }}
-		</li>
-		{% endfor %}
-	</ul>
 </div>
 <div class="albums">
 	<img class="album-cover" src="assets/images/harrison-ford-ultras-album-cover.jpg">

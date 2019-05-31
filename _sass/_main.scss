@@ -18,7 +18,7 @@ body {
 }
 
 .video {
-	margin: 7rem 0 8rem;
+	margin: 7rem 0;
 	margin-left: -$horizontal-spacing;
 	margin-right: -$horizontal-spacing;
 
@@ -30,17 +30,18 @@ body {
 }
 
 .info {
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 .events {
-	margin-bottom: 5rem;
+	font-weight: bold;
+	margin-bottom: 4rem;
 }
 
 .albums {
 	border-bottom: 1px solid $black;
 	padding-bottom: 4rem;
-	margin-bottom: 4rem;
+	margin-bottom: 6rem;
 }
 
 .paragraph {
@@ -49,7 +50,7 @@ body {
 
 .album-cover {
 	width: 100%;
-	margin-bottom: $distance-2;
+	margin-bottom: $distance-1;
 }
 
 .about {
@@ -69,6 +70,10 @@ body {
 	}
 }
 
+.social-media {
+	margin-bottom: 4rem;
+}
+
 .social-media-icon {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -78,7 +83,6 @@ body {
 	display: inline-block;
 	opacity: 0.4;
 	margin-right: 2rem;
-	margin-bottom: $distance-4;
 
 	&:last-child {
 		margin-right: 0;
