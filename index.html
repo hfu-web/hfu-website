@@ -43,7 +43,7 @@ title: Harrison Ford Ultras
 		{% unless album.published == 'false' %}
 		<div class="album">
 			<img alt="Albumcover {{ album.name_des_albums }} – Harrison Ford Ultras" title="Albumcover {{ album.name_des_albums }} – Harrison Ford Ultras" class="album-cover" src="{{ album.albumcover }}">
-			<p class="paragraph">{{ album.beschreibungstext | markdownify }}</p>
+			{{ album.beschreibungstext | markdownify }}
 		</div>
 		{% endunless %}
 		{% endfor %}

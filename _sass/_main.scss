@@ -59,9 +59,11 @@ body {
 .content-container {
 	border-bottom: 1px solid $black;
 	padding-bottom: 4rem;
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
 
 	@media screen and (min-width: $bp) {
+		padding-bottom: 6rem;
+		margin-bottom: 6rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
