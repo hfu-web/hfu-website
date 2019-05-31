@@ -16,6 +16,12 @@ fields:
     schema:
       format: markdown
   label: Beschreibungstext
+- name: name_des_albums
+  type: text
+  config:
+    required: true
+  label: Name des Albums
+  description: Wie heisst das Album?
 - name: uploaddatum
   type: datetime
   label: Uploaddatum
