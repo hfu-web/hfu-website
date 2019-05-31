@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: _includes
-  label: Vimeo-Video
 - type: directory
   path: _events
   label: Events
