@@ -5,19 +5,22 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: _albums
-  label: Albums
-  create: documents
-  match: "**/*"
-  templates:
-  - album
-- type: directory
   path: _events
   label: Events
   create: documents
   match: "**/*"
   templates:
   - event
+- type: directory
+  path: _albums
+  label: Albums
+  create: documents
+  match: "**/*"
+  templates:
+  - album
+- type: jekyll-pages
+  label: Seiten
+  create: all
 upload_dir: assets/images
 public_path: assets/images
 front_matter_path: ''
