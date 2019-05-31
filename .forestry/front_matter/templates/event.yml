@@ -21,3 +21,5 @@ fields:
       format: markdown
   label: Text
   description: Die Beschreibung des Events
+pages:
+- _events/hamburg.md
